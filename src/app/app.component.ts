@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PushPopService } from './push-pop.service';
 
 @Component({
   selector: 'ptt-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ptt';
+
+  constructor(public pushPopSrv: PushPopService) {}
 }
